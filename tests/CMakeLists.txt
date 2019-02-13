@@ -24,17 +24,13 @@ else()
 
 endif()
 
-
-
-
 enable_testing()
-add_executable(inf inf.cpp)
 
+add_executable(inf inf.cpp)
 
 target_link_libraries(inf gtest gtest_main)
 
 include_directories( ${CMAKE_SOURCE_DIR}/includes )
-
 
 set_target_properties(inf PROPERTIES CXX_STANDARD 20)
 
